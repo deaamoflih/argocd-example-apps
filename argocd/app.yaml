@@ -30,7 +30,7 @@ spec:
      #   path: files/config.json
 
       # Release name override (defaults to application name)
-      releaseName: stable
+     # releaseName: stable
 
       # Helm values files for overriding values in the helm chart
       # The path is relative to the spec.source.path directory defined above
@@ -55,14 +55,14 @@ spec:
 
       # Optional Helm version to template with. If omitted it will fall back to look at the 'apiVersion' in Chart.yaml
       # and decide which Helm binary to use automatically. This field can be either 'v2' or 'v3'.
-      version: v3
+    #  version: v3
 
     # kustomize specific config
     #kustomize:
       # Optional kustomize version. Note: version must be configured in argocd-cm ConfigMap
     #  version: v3.5.4
       # Optional image name prefix
-      namePrefix: prod-
+      #namePrefix: prod-
       # Optional images passed to "kustomize edit set image".
     #  images:
     #  - gcr.io/heptio-images/ks-guestbook-demo:0.2
