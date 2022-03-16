@@ -1,0 +1,12 @@
+project: default
+source:
+  repoURL: 'https://charts.bitnami.com/bitnami'
+  targetRevision: 9.9.3
+  helm:
+    parameters:
+      - name: service.type
+        value: ClusterIP
+  chart: nginx
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: default
