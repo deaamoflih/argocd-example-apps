@@ -4,6 +4,8 @@
 
 replicaCount: 5
 
+namespace: prod
+
 image:
   repository: nginx
   pullPolicy: IfNotPresent

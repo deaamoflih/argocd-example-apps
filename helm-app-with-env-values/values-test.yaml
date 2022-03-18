@@ -4,6 +4,8 @@
 
 replicaCount: 3
 
+namespace: test
+
 image:
   repository: nginx
   pullPolicy: IfNotPresent
